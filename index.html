@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Controller</title>
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bass.css" rel="stylesheet">
+    <link href="/fa/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body class="bg-darken-1">
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">test</h5>
+                            <hr class="my-4">
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button">Open</button>
+                            <hr class="my-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/fa/js/all.min.js"></script>
+<script>
+$(document).ready(function () {
+    
+    $("button").click(function (e) {
+        e.preventDefault();
+        var btn = $(this);
+        var url = "/gpio.php";
+        btn.prop('disabled', true);
+        btn.html('<i class="fa fa-spin fa-spinner"></i>');
+        $.ajax({
+            type: "get",
+            url: url,
+            success: function () {
+                btn.prop('disabled', false);
+                btn.html("Open");
+            }
+        });
+    })
+});
+</script>
+</html>
