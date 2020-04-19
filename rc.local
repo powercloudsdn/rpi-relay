@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sleep 5
+
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=5' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=12' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=13' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=16' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=19' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=20' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=21' > /dev/null
+curl -s 'http://192.168.88.99/gpio.php?state=off&relay=26' > /dev/null
