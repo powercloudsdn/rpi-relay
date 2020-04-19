@@ -1,0 +1,115 @@
+    1  exit
+    2  sudo passwd root
+    3  su
+    4  chmod -R 777 /var/www
+    5  sudo chmod -R 777 /var/www
+    6  wget https://use.fontawesome.com/releases/v5.13.0/fontawesome-free-5.13.0-web.zip
+    7  sudo apt-get install unzip
+    8  unzip fontawesome-free-5.13.0-web.zip 
+    9  mv fontawesome-free-5.13.0-web fa
+   10  reboor
+   11  reboot
+   12  sudo reboot
+   13  python test.py 
+   14  sudo python test.py 
+   15  0
+   16  sudo python test.py 
+   17  sudo chmod +x test.py 
+   18  ./test.py 
+   19  sudo ./test.py 
+   20  sudo apt-get install mosquitto
+   21  sudo apt-get install make
+   22  sudo apt-get install nodejs
+   23  git init
+   24  git add .
+   25  git commit -m "first commit"
+   26  git config --global user.email "hannes@cloudwan.co.za"
+   27  git config --global user.name "Hannes Kruger"
+   28  git commit -m "first commit"
+   29  git remote add origin https://github.com/powercloudsdn/rpi-relay.git
+   30  git push -u origin master
+   31  sudo apt-get install libavahi-compat-libdnssd-dev
+   32  sudo apt-get install npm
+   33  sudo npm install -g homebridge
+   34  sudo npm install -g homebridge-mqtt-switch-tasmota
+   35  sudo mosquitto_passwd -c /etc/mosquitto/passwd home
+   36  cat /etc/mosquitto/passwd
+   37  sudo nano /etc/mosquitto/mosquitto.conf
+   38  sudo systemctl restart mosquitto
+   39  sudo /etc/init.d/mosquitto status
+   40  mkdir ~/.homebridge
+   41  touch ~/.homebridge/config.json
+   42  nano ~/.homebridge/config.json
+   43  homebridge 
+   44  nano ~/.homebridge/config.json
+   45  homebridge 
+   46  sudo apt-get install libava-compat-libdnssd-dev
+   47  sudo apt-get install libasound2-dev
+   48  git clone https://github.com/KhaosT/HAP-NodeJS.git
+   49  cd HAP-NodeJS
+   50  sudo npm install -g node-gyp
+   51  sudo npm install node-persist
+   52  sudo npm install
+   53  cd ..
+   54  cd /var/www/html/
+   55  ls
+   56  sudo su
+   57  sudo npm install -g homebridge-gpio-relay
+   58  cd quick2wire-gpio-admin
+   59  git clone git://github.com/jamesblanksby/quick2wire-gpio-admin.git
+   60  cd quick2wire-gpio-admin
+   61  make
+   62  sudo make install
+   63  sudo adduser $USER gpio
+   64  whereis homebridge
+   65  sudo adduser $USER gpio
+   66  tail -f /var/log/apache2/access.log 
+   67  /usr/local/bin/gpio -g mode 21 out
+   68  /usr/local/bin/gpio -g write 21 1
+   69  /usr/local/bin/gpio -g write 21 0
+   70  /usr/local/bin/gpio -g write 21 10
+   71  /usr/local/bin/gpio -g write 21 0
+   72  /usr/local/bin/gpio -g write 21 1
+   73  tail -f /var/log/apache2/access.log 
+   74  /usr/local/bin/gpio -g mode 26 out
+   75  /usr/local/bin/gpio -g write 26 0
+   76  /usr/local/bin/gpio -g write 26 1
+   77  cd status/
+   78  echo 0 > 16.json
+   79  echo 0 > 19.json
+   80  echo 0 > 20.json
+   81  echo 0 > 26.json
+   82  echo 0 > 21.json
+   83  echo 0 > 5.json
+   84  echo 0 > 12.json
+   85  echo 0 > 13.json
+   86  cd ..
+   87  chmod -R 777 status
+   88  cd/
+   89  cd /
+   90  clear
+   91  gpio -g mode 16 out
+   92  gpio -g write 16 1
+   93  gpio -g write 16 0
+   94  whereis cat
+   95  whereis echo
+   96  /bin/echo 0 > /var/www/html/status/*.json
+   97  /bin/echo 0 > /var/www/html/status/*
+   98  touch rc.local
+   99  sudo touch rc.local
+  100  chmod 777 rc.local 
+  101  sudo chmod 777 rc.local 
+  102  chmod +x rc
+  103  chmod +x rc.local 
+  104  sudo chmod +x rc.local 
+  105  ./rc.local 
+  106  sleep 3
+  107  ./rc.local 
+  108  reboot
+  109  sudo reboot
+  110  reboot
+  111  sudo reboot
+  112  php get_sunset.php 
+  113  sudo apt-get install php-curl
+  114  php get_sunset.php 
+  115  history > history.txt
