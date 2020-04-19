@@ -1,0 +1,151 @@
+    1  cd /var
+    2  chown -R www-data.www-data www
+    3  adduser pi www-data
+    4  iwconfig wlan0 essid MikroTik-8E79B1
+    5  apt install wireless-tools
+    6  iwconfig wlan0 essid MikroTik-8E79B1
+    7  ifconfig 
+    8  ifconfig wlan0 up
+    9  ifconfig 
+   10  iwconfig wlan0 essid MikroTik-8E79B1
+   11  ifconfig 
+   12  dhclient wlan0
+   13  ifconfig 
+   14  dhclient wlan0
+   15  ifconfig 
+   16  cd
+   17  git clone git://git.drogon.net/wiringPi
+   18  ls
+   19  sudo apt-get install git-core
+   20  ls
+   21  git clone git://git.drogon.net/wiringPi
+   22  sudo apt-get install wiringpi
+   23  wget https://github.com/WiringPi/WiringPi/archive/master.zip
+   24  ls
+   25  apt-get install master
+   26  apt-get install zip
+   27  apt-get install unzip
+   28  unzip master.zip 
+   29  cd WiringPi-master/
+   30  ./build 
+   31  /usr/local/bin/gpio -g mode 16 out
+   32  /usr/local/bin/gpio -g write 16 1
+   33  /usr/local/bin/gpio -g write 16 0
+   34  /usr/local/bin/gpio -g write 16 1
+   35  /usr/local/bin/gpio -g write 16 0
+   36  /usr/local/bin/gpio -g write 16 1
+   37  /usr/local/bin/gpio -g write 16 0
+   38  cd /var/www/html/
+   39  nano index.php 
+   40  php index.php 
+   41  nano index.php 
+   42  php index.php 
+   43  /usr/local/bin/gpio -g write 16 0
+   44  cd
+   45  apt-get update
+   46  apt-get upgrade
+   47  sudo apt-get install python-pip python-dev
+   48  sudo pip install RPi.GPIO
+   49  touch relay.py
+   50  whereis python
+   51  vi relay.py 
+   52  chmod +x relay.py 
+   53  nano relay.py 
+   54  ./relay.py 
+   55  vi relay.py 
+   56  ./relay.py 
+   57  vi relay.py 
+   58  ./relay.py 
+   59  vi relay.py 
+   60  ./relay.py 
+   61  vi relay.py 
+   62  ./relay.py 
+   63  cp relay.py relayoff
+   64  vi relayoff 
+   65  ./relayoff 
+   66  ./relay.py 
+   67  ./relayoff 
+   68  rm -fr relayoff 
+   69  vi relay.py 
+   70  ./
+   71  ./relay.py 
+   72  vi relay.py 
+   73  ./relay.py 
+   74  vi relay.py 
+   75  ./relay.py 
+   76  vi relay.py 
+   77  nano
+   78  nano relay.py 
+   79  vi relay.py 
+   80  ./relay.py 
+   81  vi relay.py 
+   82  nano relay.py 
+   83  vi relay.py 
+   84  ./relay.py 
+   85  vi relay.py 
+   86  ./relay.py 
+   87  ./relay.py && /dev/null
+   88  nohup /root/relay.py &
+   89  nohup /root/relay.py & > /dev/null
+   90  ps ax | grep py
+   91  nohup /root/relay.py & > /dev/null
+   92  nohup /root/relay.py && > /dev/null
+   93  nohup /root/relay.py & > /dev/null
+   94  apt install libapache2-mod-php
+   95  netstat -nlp
+   96  php -v
+   97  cd /var/www/html
+   98  mv /root/relay.py /var/www/html/
+   99  rm -fr index.html 
+  100  touch  index.php
+  101  nano index.php 
+  102  php index.php 
+  103  whereis nohup
+  104  nano index.php 
+  105  php index.php 
+  106  nano index.php 
+  107  php index.php 
+  108  touch /tmp/relay
+  109  php index.php 
+  110  chmod +x 777 relay.py 
+  111  chmod -R 777 relay.py 
+  112  chmod -R 777 /tmp/
+  113  php index.php 
+  114  nano index.php 
+  115  php index.php 
+  116  vi relay.py 
+  117  php index.php 
+  118  sudo -i
+  119  cd
+  120  cd /var/www/html/
+  121  apt-get install python-dev python-pip
+  122  apt-get install libavahi-compat-libdnssd-dev
+  123  node -v
+  124  npm -v
+  125  git clone https://github.com/KhaosT/HAP-NodeJS.git
+  126  cd HAP-NodeJS
+  127  npm install -g node-gyp
+  128  npm install node-persist && npm install srp && npm install mdns && npm install ed25519 && npm install curve25519 && npm install debug && npm install python-shell
+  129  npm rebuild
+  130  npm install -g node-gyp
+  131  npm install node-persist
+  132  npm install srp
+  133  wget http://node-arm.herokuapp.com/node_latest_armhf.deb
+  134  apt-get install libavahi-compat-libdnssd-dev
+  135  apt-get install build-essential
+  136  npm install -g node-gyp
+  137  sudo chown -R ubuntu:ubuntu /usr/local/lib/node_modules/
+  138  npm install -g node-gyp
+  139  .
+  140  cd ..
+  141  rm -fr HAP-NodeJS/
+  142  curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+  143  sudo apt-get install -y nodejs gcc g++ make python
+  144  node -v
+  145  sudo npm install -g npm
+  146  sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
+  147  sudo hb-service install --user homebridge
+  148  sudo npm install -g homebridge-http-switch
+  149  cd
+  150  cd /var/www/html/
+  151  history > root_history.txt
